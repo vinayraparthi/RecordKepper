@@ -1,4 +1,4 @@
-package com.vinay.recordkepper
+package com.vinay.recordkepper.cycling
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -33,7 +33,7 @@ class CyclingFragment : Fragment() {
 
     private fun launchCyclingRecordScreen(distance: String) {
         context
-        val intent = Intent(context,EditCyclingRecordActivity::class.java)
+        val intent = Intent(context, EditCyclingRecordActivity::class.java)
         intent.putExtra("Distance",distance)
         startActivity(intent)
     }

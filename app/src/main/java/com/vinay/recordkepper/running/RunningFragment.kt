@@ -1,4 +1,4 @@
-package com.vinay.recordkepper
+package com.vinay.recordkepper.running
 
 import android.content.Intent
 import android.os.Bundle
@@ -35,7 +35,7 @@ class RunningFragment : Fragment() {
 
     private fun launchRunningRecordScreen(distance : String) {
         context
-        val intent = Intent(context,EditRunningRecordActivity::class.java)
+        val intent = Intent(context, EditRunningRecordActivity::class.java)
         intent.putExtra("Distance",distance)
         startActivity(intent)
     }

@@ -7,7 +7,9 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.fragment.app.commit
 import com.google.android.material.navigation.NavigationBarView
+import com.vinay.recordkepper.cycling.CyclingFragment
 import com.vinay.recordkepper.databinding.ActivityMainBinding
+import com.vinay.recordkepper.running.RunningFragment
 
 class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
 

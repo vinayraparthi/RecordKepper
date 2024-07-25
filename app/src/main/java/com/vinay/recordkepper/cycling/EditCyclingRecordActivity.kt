@@ -1,4 +1,4 @@
-package com.vinay.recordkepper
+package com.vinay.recordkepper.cycling
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
