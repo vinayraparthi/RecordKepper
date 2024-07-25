@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RecordKepper" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/my_dark_primary</item>
+        <item name="colorPrimaryVariant">@color/my_dark_primary_variant</item>
+        <item name="actionBarTheme">@style/ActionBarTheme</item>
+    </style>
+
+    <!-- Custom Action Bar theme -->
+    <style name="ActionBarTheme" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="background">@color/my_dark_primary_variant</item>
+    </style>
+</resources>
+

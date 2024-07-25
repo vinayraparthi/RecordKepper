@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RecordKepper" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/my_dark_primary</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- Action Bar style -->
+    <style name="MyActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">@color/my_dark_primary</item>
+    </style>
+</resources>
