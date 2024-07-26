@@ -4,16 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="32dp"
     tools:context=".running.EditRunningRecordActivity">
     
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/text_input_record"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="@string/record"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_record"
+            android:layout_width="match_parent"
+            tools:text="24:15"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/text_input_date"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:hint="@string/date"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/text_input_record"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_date"
+            android:layout_width="match_parent"
+            tools:text="@string/_15th_january_2023"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif-medium"
-        android:text="This will be where we`ll edit our running records!"/>
+        android:layout_marginTop="48dp"
+        android:text="@string/save"
+        android:id="@+id/button_save"
+        app:layout_constraintTop_toBottomOf="@id/text_input_date"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/clear_record"
+        android:id="@+id/button_delete"
+        app:layout_constraintTop_toBottomOf="@id/button_save"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
