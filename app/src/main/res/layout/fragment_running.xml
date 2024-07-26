@@ -78,7 +78,7 @@
                     android:textSize="20sp"
                     android:textColor="@color/dark_grey"/>
                 <TextView
-                    android:id="@+id/text_value_5km_date"
+                    android:id="@+id/text_view_5km_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/text_view_5km_value"
@@ -86,7 +86,8 @@
                     tools:text="29/1/2020"
                     android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-light"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_grey"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <View
@@ -124,7 +125,7 @@
                     android:textSize="20sp"
                     android:textColor="@color/dark_grey"/>
                 <TextView
-                    android:id="@+id/text_value_10km_date"
+                    android:id="@+id/text_view_10km_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/text_view_10km_value"
@@ -149,7 +150,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/text_view_half_marathon"
+                    android:id="@+id/text_view_10km_heading_marathon"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_width="wrap_content"
@@ -170,7 +171,7 @@
                     android:textSize="20sp"
                     android:textColor="@color/dark_grey"/>
                 <TextView
-                    android:id="@+id/text_value_half_marathon_date"
+                    android:id="@+id/text_view_half_marathon_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/text_view_half_marathon_value"
@@ -180,6 +181,8 @@
                     android:fontFamily="sans-serif-light"
                     android:textSize="16sp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
             <View
                 android:layout_width="match_parent"
@@ -214,9 +217,9 @@
                     tools:text="22:04"
                     android:fontFamily="sans-serif-light"
                     android:textSize="20sp"
-                    android:textColor="@color/dark_grey"/>
+                    />
                 <TextView
-                    android:id="@+id/text_value_marathon_date"
+                    android:id="@+id/text_view_marathon_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/text_view_marathon_value"
